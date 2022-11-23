@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+  <body>
+    <header class="headerPrincipal">
+      <div class="containerhead">
+        <h1 class="headerPrincipal-titulo">
+          <img src="img/AluraGeek.png" alt="" />
+          <img src="img/AluraGeek1.png" alt="" />
+          <input
+            type="search"
+            class="buscar"
+            placeholder="¿Que deseas buscar?"
+          />
+        </h1>
+      </div>
+    </header>
+    <div class="containerlogin">
+      <form class="containerlogin" name="login" id="login">
+        <h1>Iniciar sesión</h1>
+        <input
+          type="text"
+          placeholder="Escriba su Usuario"
+          class="inputlogin"
+          id="usuario"
+          name="usuario"
+        />
+        <input
+          type="text"
+          placeholder="Escriba su contraseña"
+          class="inputlogin"
+          id="password"
+          name="password"
+        />
+        <input
+          type="button"
+          value="Entrar"
+          class="btn"
+          id="btnentrar"
+          name="btnentrar"
+          onclick="entrar()"
+        />
+      </form>
+    </div>
+    <br />
+    <div class="container2">
+      <nav>
+        <ul>
+          <li>Quienes somos</li>
+          <li>politica de privacidad</li>
+          <li>Programa de fidelidad</li>
+          <li>Nuestras tiendas</li>
+          <li>Quiero se franquiciario</li>
+          <li>Anuncie aqui</li>
+        </ul>
+      </nav>
+
+      <form class="formulario" action="" id="formu" name="formu">
+        <p><strong>Hable con Nosostros</strong></p>
+        <input type="text" class="nombre" id="nombre" placeholder="Nombre" />
+        <textarea
+          name="mensaje1"
+          id="mensaje1"
+          cols="30"
+          rows="10"
+          class="mensaje"
+          placeholder="Escribe tu mensaje"
+        ></textarea>
+        <button class="btn" id="enviar" onclick="agregarMensaje()">
+          Enviar Mensaje
+        </button>
+        <div hidden>
+          <ul id="mensajes">
+            <!--<li>mensajes</li>-->
+          </ul>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>Desarrollado por Mario Alberto Hernández Morales</p>
+      <p>2022</p>
+    </footer>
+    <script src="/entrar.js"></script>
+    <script src="/mensaje.js"></script>
+    <script src="/app.js"></script>
+    <script src="/productos.js"></script>
+  </body>
+</html>

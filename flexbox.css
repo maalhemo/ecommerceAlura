@@ -1,0 +1,36 @@
+.contenidoPrincipal {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.contenidoPrincipal-link {
+	display: flex;
+	width: 20%;
+}
+.containerhead{
+display: flex;
+justify-content: space-between;	
+width: 80%;
+margin:  auto; 
+height: 90%;
+align-items: center;
+}
+.container1{
+	display: flex;	
+}
+.container2{
+	display: flex;
+	flex-wrap: wrap;
+	/* flex-direction: row; */
+	justify-content: space-evenly;
+}
+.formulario{
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+}
+.containerlogin{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="flexbox.css" />
+  </head>
+  <body>
+    <header class="headerPrincipal">
+      <div class="containerhead">
+        <h1 class="headerPrincipal-titulo">
+          <img src="img/AluraGeek.png" alt="" />
+          <img src="img/AluraGeek1.png" alt="" />
+          <input
+            type="search"
+            class="buscar"
+            placeholder="¿Que deseas buscar?"
+          />
+        </h1>
+        <button onclick="location.href='login.html'" class="login">
+          Login
+        </button>
+      </div>
+      <div class="container1">
+        <img class="head__logo" src="img/Hero.png" alt="imagen principal" />
+      </div>
+    </header>
+
+    <div class="container">
+      <h2 class="subtitulo">Starwars</h2>
+
+      <nav>
+        <ul class="contenidoPrincipal">
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/1.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/2.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/3.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/4.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/5.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/6.png" />Ver producto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h2 class="subtitulo">Consolas</h2>
+      <nav>
+        <ul class="contenidoPrincipal">
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/7.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/8.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/9.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/10.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/11.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/12.png" />Ver producto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="container">
+      <h2 class="subtitulo">Diversos</h2>
+      <nav>
+        <ul class="contenidoPrincipal">
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/13.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/14.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/15.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/16.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/17.png" />Ver producto</a>
+          </li>
+          <li class="contenidoPrincipal-link">
+            <a href="#"><img src="img/18.png" />Ver producto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <br />
+    <div class="container2">
+      <nav>
+        <ul>
+          <li>Quienes somos</li>
+          <li>politica de privacidad</li>
+          <li>Programa de fidelidad</li>
+          <li>Nuestras tiendas</li>
+          <li>Quiero se franquiciario</li>
+          <li>Anuncie aqui</li>
+        </ul>
+      </nav>
+
+      <form class="formulario" id="formu" action="">
+        <p><strong>Hable con Nosostros</strong></p>
+        <input
+          type="text"
+          class="nombre"
+          id="nombre"
+          placeholder="Nombre"
+          required
+        />
+        <textarea
+          name="mensaje1"
+          id="mensaje1"
+          cols="30"
+          rows="10"
+          class="mensaje"
+          placeholder="Escribe tu mensaje"
+          required
+        ></textarea>
+        <button class="btn" id="enviar" onclick="agregarMensaje()">
+          Enviar Mensaje
+        </button>
+        <div hidden>
+          <ul id="mensajes">
+            <!--<li>mensajes</li>-->
+          </ul>
+        </div>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>Desarrollado por Mario Alberto Hernández Morales</p>
+      <p>2022</p>
+    </footer>
+    <script src="/mensaje.js"></script>
+    <script src="/app.js"></script>
+    <script src="/productos.js"></script>
+  </body>
+</html>
